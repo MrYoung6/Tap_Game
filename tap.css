@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+
+}
+
+html {
+    display: block;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Syne Mono', monospace;
+}
+
+main {
+    background-color: rgb(3, 66, 35);
+    color: beige;
+    width: 100%;
+    height: 100vh;
+}
+
+.top-title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    padding-top: 2.2rem;
+
+}
+
+span {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.9rem;
+    font-size: 1.7rem;
+
+}
+
+i {
+
+    color: yellow;
+}
+
+h1 {
+    font-size: 2.5em;
+    padding: 0;
+    margin-left: 2.2rem;
+    margin-right: 2.2rem;
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4em;
+    margin-top: 2rem;
+}
+
+.instructions h2 {
+    margin-bottom: 2rem;
+}
+
+.instructions ul li {
+    line-height: 1.7em;
+
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 31rem;
+    border-radius: 0.6rem;
+    color: black;
+    height: auto;
+}
+
+.game {
+    margin: 0 auto;
+    padding: 0.5rem;
+    width: 60%;
+}
+
+.race {
+    display: flex;
+    width: 100%;
+
+}
+
+.race img {
+    width: 10%;
+    margin: 3rem 0;
+    padding: 0.3rem;
+}
+
+.race #turtle {
+
+    margin-top: 5.5rem;
+    left: 0;
+
+}
+
+.race #finish {
+    position: absolute;
+    right: 20%
+}
+
+.game #timer {
+    margin-bottom: 2rem;
+    display: none;
+}
+
+.game #clock {
+    margin-bottom: 2rem;
+    display: none;
+}
+
+.counter {
+    display: flex;
+    margin: 25px 0;
+}
+
+.counter h2 {
+    text-align: center;
+
+    font-size: 45px;
+    display: none;
+}
+
+.game .btn {
+    margin-top: 2.5rem;
+    margin-bottom: 1.4rem;
+    width: 13%;
+    background-color: darkorange;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 0.4rem;
+}
+
+.game .btn-2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.4rem;
+    width: 13%;
+    background-color: darkorange;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 0.4rem;
+}
+
+.game .btn:hover {
+    cursor: pointer;
+}
+
+.game .btn-2:hover {
+    cursor: pointer;
+}
+
+#top {
+    margin-top: 1.4em;
+}
+
+#timer {
+    display: none;
+}
+
+.btn-2 {
+    display: none;
+}

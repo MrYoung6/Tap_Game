@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="tap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Syne+Mono&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <main id="theGame">
+        <div class="top-title">
+            <span><i class="fa fa-bolt"></i></span>
+            <h1>Turtle Tap</h1>
+            <span><i class="fa fa-bolt"></i></span>
+        </div>
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ul>
+                <li>30 seconds to get the turtle to the finishline</li>
+                <li>Tap Spacebar to move</li>
+                <li>You will receive your score at the end</li>
+            </ul>
+        </div>
+        <div class="game">
+            <h3 id="top">Press start to begin</h3>
+            <div class="race">
+                <img id="turtle"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpi4zPZ24JHLlwwdhPJVbhIpRMEErBO6mMsg&usqp=CAU">
+                <img id="finish"
+                    src="data:image/png;base64,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">
+            </div>
+            <h3 id="timer"></h3>
+            <h3 id="clock"></h3>
+            <div class="counter">
+                <h2 class="nm">0</h2>
+            </div>
+            <button class="btn" onclick="startGame()" type="button" name="btn">Start</button>
+            <button class="btn-2" onclick="resetAfter()" name="btn-2">Reset</button>
+        </div>
+    </main>
+
+    <script src="tap.js"></script>
+
+</body>
+
+</html>
