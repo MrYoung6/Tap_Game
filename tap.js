@@ -67,7 +67,7 @@ function addKey(e) {
     x++;
     renderTaps(e);
     moveIt(e);
-    if (x === 222) {
+    if (window.innerWidth >= 320 && window.innerWidth <= 450 && x === 109 || x === 222) {
         clearInterval(countdownIntervalId);
         resetB4();
     }
@@ -81,7 +81,11 @@ function moveIt(e) {
 };
 
 function moveRight(topG) {
+    if (window.innerWidth >= 320 && window.innerWidth <= 450) {
+    topG.style.marginLeft = x * 1 + "px";
+    } else {
     topG.style.marginLeft = x * 3 + "px";
+    }
 };
 
 
